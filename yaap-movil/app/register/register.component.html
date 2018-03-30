@@ -1,0 +1,31 @@
+<FlexboxLayout flexDirection="column" class="container-login100" alignItems="center" justifyItems="center" ;>
+  <StackLayout class="wraplogin100">
+    <Label text="Register" class="labelRegister"></Label>
+    <StackLayout orientation="horizontal">
+      <TextField hint="identification" class="input100" [(ngModel)]="identification"></TextField>
+      <TextField hint="email" class="input100" keyboardType="email" [(ngModel)]="email"></TextField>
+    </StackLayout>
+    <StackLayout orientation="horizontal">
+        
+      <TextField hint="name" class="input100" [(ngModel)]="name"></TextField>
+      <TextField hint="last Name" class="input100" [(ngModel)]="lastName"></TextField>
+    </StackLayout>
+    <StackLayout orientation="horizontal">
+        
+      <TextField hint="Phone" class="input100" [(ngModel)]="phone"></TextField>
+      <TextField hint="type" class="input100" [(ngModel)]="type"></TextField>
+      </StackLayout>
+      <StackLayout orientation="horizontal">
+        
+        <TextField hint="password" class="input100" [(ngModel)]="password" secure="true"></TextField>
+        <TextField hint="confirm password" class="input100" [(ngModel)]="passwordConfirmation" secure="true"></TextField>
+        </StackLayout>
+      <Button text="Presioname" (tap)="onRegister(email, password, passwordConfirmation, name, lastName, identification, type, phone)" class="btn-primary"></Button>
+
+      <Button class="txt2" text="I Have Account" [nsRouterLink]="[ '/login']"></Button>
+      <!-- [routerLink]="[ '/forgot']" -->
+
+      <!--[routerLink]="[ '/register']"-->
+
+    </StackLayout>
+</FlexboxLayout>

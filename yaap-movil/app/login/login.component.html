@@ -1,0 +1,19 @@
+<FlexboxLayout flexDirection="column" class="container-login100" alignItems="center" justifyItems="center" ;>
+    <StackLayout class="wraplogin100">
+        <Label text="Login" class="labelRegister"></Label>
+        <TextField hint="email" class="input100" keyboardType="email" [(ngModel)]="email"></TextField>
+        <TextField hint="password" class="input100" [(ngModel)]="password" secure="true"></TextField>
+        <Button text="Login" (tap)="onLogin(email,password)" class="btn-primary"></Button>
+
+        <StackLayout class="nav">
+            <Button text="Username / Password?" [nsRouterLink]="['/forgot']" class=" txt2"></Button>
+            <Button class="txt2" text="Create your Account" [nsRouterLink]="[ '/register']"></Button>
+        </StackLayout>
+        <!-- [routerLink]="[ '/forgot']" -->
+
+        <!--[routerLink]="[ '/register']"-->
+
+
+    
+    </StackLayout>
+</FlexboxLayout>

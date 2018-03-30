@@ -1,0 +1,31 @@
+<ActionBar title="Title" icon="" class="action-bar">
+</ActionBar>
+
+<FlexboxLayout flexDirection="column" class="container-login100" alignItems="center" justifyItems="center"  *ngIf="favorito">
+    <StackLayout class="wraplogin100">
+        <StackLayout orientation="horizontal">
+            <TextField hint="identification" class="input100" [(ngModel)]="identification"></TextField>
+            <TextField hint="email" class="input100" keyboardType="email" [(ngModel)]="email"></TextField>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+
+            <TextField hint="name" class="input100" [(ngModel)]="name"></TextField>
+            <TextField hint="last Name" class="input100" [(ngModel)]="lastName"></TextField>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+
+            <TextField hint="country" class="input100" [(ngModel)]="country"></TextField>
+            <TextField hint="direction" class="input100" [(ngModel)]="direction"></TextField>
+        </StackLayout>
+        <StackLayout orientation="horizontal">
+
+            <TextField hint="Phone" class="input100" [(ngModel)]="phone"></TextField>
+            <TextField hint="type" class="input100" [(ngModel)]="type"></TextField>
+        </StackLayout>
+        <StackLayout orientation="vertical">
+
+            <Label [text]="signUpdate" class="input101"></Label>
+            <Label [text]="status" class="input101"></Label>
+        </StackLayout>
+    </StackLayout>
+</FlexboxLayout>
